@@ -1,0 +1,38 @@
+<?php
+
+if (class_exists('tipoactividades') != true) {
+    class tipoactividades
+    {
+        protected $idVivienda;
+        protected $idActividad;
+
+        public function __construct($idVivienda = null, $idActividad = null)
+        {
+            $this->idVivienda = $idVivienda;
+            $this->idActividad = $idActividad;
+        }
+
+        public function getIdVivienda()
+        {
+            return $this->idVivienda;
+        }
+
+        public function setIdVivienda($idVivienda)
+        {
+            $this->idVivienda = $idVivienda;
+            return $this;
+        }
+
+        public function getIdActividad()
+        {
+            return $this->idActividad;
+        }
+
+        public function setIdActividad($idActividad)
+        {
+            $this->idActividad = $idActividad;
+            return $this;
+        }
+    }
+}
+?>

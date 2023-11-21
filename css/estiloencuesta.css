@@ -1,0 +1,119 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3498db;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 6px;
+}
+
+input[type=radio] {
+    margin-top: 20px;
+}
+
+label#lbl {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(9, 110, 40, 0.3);
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+}
+
+#row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    #row2{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+.boton {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 6px;
+    border: 2px solid #2980b9;
+}
+
+.boton:hover {
+    color: black;
+    background-color: #2980b9;
+}
+
+/* Estrategia de responsividad */
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
